@@ -9,9 +9,9 @@ import (
 )
 
 var RootCmd = &cobra.Command{
-	Use:   "jt-devops",
-	Short: "程序员在囧途运维小工具",
-	Long: `程序员在囧途运维小工具`,
+	Use:   "devops",
+	Short: "运维小工具",
+	Long: `运维小工具`,
 	Run: func(cmd *cobra.Command, args []string) {
 
 	},

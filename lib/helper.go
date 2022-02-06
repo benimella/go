@@ -23,7 +23,7 @@ func clearConsole() {
 		cmd.Stdout = os.Stdout
 		cmd.Run()
 	} else {
-		log.Fatal("目前clear操作只写了Linux、darwin、Windows3个。其他没做，累的")
+		log.Fatal("目前clear操作只支持Linux、darwin、Windows")
 	}
 }
 func mustFlag(name, t string, cmd *cobra.Command) interface{} {
@@ -67,7 +67,7 @@ func SSHConnect(user, password, host string, port int) (*ssh.Session, error) {
 	clientConfig = &ssh.ClientConfig{
 		User:            user,
 		Auth:            auth,
-		Timeout:         5 * time.Second, //增加了  超时时间
+		Timeout:         5 * time.Second, // 超时时间
 		HostKeyCallback: hostKeyCallbk,
 	}
 	// connet to ssh

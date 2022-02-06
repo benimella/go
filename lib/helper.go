@@ -67,7 +67,7 @@ func SSHConnect(user, password, host string, port int) (*ssh.Session, error) {
 	clientConfig = &ssh.ClientConfig{
 		User:            user,
 		Auth:            auth,
-		Timeout:         5 * time.Second, // 超时时间
+		Timeout:         5 * time.Second, //增加了  超时时间
 		HostKeyCallback: hostKeyCallbk,
 	}
 	// connet to ssh

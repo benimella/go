@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="531de249-ecb6-4f8b-b9ed-5baf6d30ad02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sshcmd.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sshcmd.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,7 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -56,8 +53,8 @@
       <recent name="E:\jtthink\gds-pro\config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\jtthink\gds-pro" />
       <recent name="E:\jtthink\gds-pro\lib" />
+      <recent name="E:\jtthink\gds-pro" />
     </key>
   </component>
   <component name="ServiceViewManager">

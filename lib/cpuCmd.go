@@ -1,12 +1,15 @@
-package main
+package lib
 
 import (
 	"fmt"
-	"gds/lib"
 	"github.com/shirou/gopsutil/v3/cpu"
 	"github.com/spf13/cobra"
 	"time"
 )
+
+func init()  {
+	RootCmd.AddCommand(cpuCMD)
+}
 
 var cpuCMD = &cobra.Command{
 	Use:   "cpu",
@@ -20,18 +23,4 @@ var cpuCMD = &cobra.Command{
 		}
 
 	},
-}
-
-func main() {
-	//s1 := "xxxxx1"
-	//n, err := fmt.Fprintln(os.Stdout, s1)
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
-	//
-	//fmt.Println(n)
-
-	lib.RootCmd.AddCommand(cpuCMD)
-	lib.Execute()
-
 }

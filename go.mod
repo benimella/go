@@ -9,4 +9,5 @@ require (
 	github.com/spf13/cobra v1.3.0 // indirect
 	golang.org/x/crypto v0.0.0-20220128200615-198e4374d7ed // indirect
 	golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )

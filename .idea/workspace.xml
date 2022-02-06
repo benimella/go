@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531de249-ecb6-4f8b-b9ed-5baf6d30ad02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gds-pro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/channel/findIn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/channel/findOut.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exporter/e1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cmd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/helper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/infocmd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sshcmd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test555.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test666.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exporter/e1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cmd.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cmd.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +49,16 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\jtthink\gds-pro\config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\jtthink\gds-pro\lib" />
       <recent name="E:\jtthink\gds-pro" />
+      <recent name="E:\jtthink\gds-pro\lib" />
     </key>
   </component>
   <component name="ServiceViewManager">

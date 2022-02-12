@@ -23,7 +23,7 @@ func clearConsole() {
 		cmd.Stdout = os.Stdout
 		cmd.Run()
 	} else {
-		log.Fatal("目前clear操作只支持Linux、darwin、Windows")
+		log.Fatal("目前clear操作只支持Linux、darwin、Windows3个")
 	}
 }
 func mustFlag(name, t string, cmd *cobra.Command) interface{} {
@@ -64,6 +64,7 @@ func SSHConnect(user, password, host string, port int) (*ssh.Session, error) {
 	hostKeyCallbk := func(hostname string, remote net.Addr, key ssh.PublicKey) error {
 		return nil
 	}
+
 	clientConfig = &ssh.ClientConfig{
 		User:            user,
 		Auth:            auth,
@@ -79,4 +80,36 @@ func SSHConnect(user, password, host string, port int) (*ssh.Session, error) {
 		return nil, err
 	}
 	return session, nil
+}
+
+func translate(head string) string {
+
+	t := map[string]string{
+		"num":         "行号",
+		"pkts":        "包数量",
+		"bytes":       "字节数",
+		"target":      "目标行为",
+		"prot":        "协议",
+		"in":          "输入",
+		"out":         "输出",
+		"source":      "源地址",
+		"destination": "目标地址",
+		"opt":         "选项",
+	}
+	if v, ok := t[head]; ok {
+		return v
+	}
+	return head
+}
+
+func getSession(remoteName string) *ssh.Session {
+	remote := SysConfig.GetRemote(remoteName)
+	if remote == nil {
+		log.Fatal("no such remote")
+	}
+	session, err := SSHConnect(remote.User, remote.Pwd, remote.Host, 22)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return session
 }

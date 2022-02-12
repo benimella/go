@@ -2,4 +2,4 @@ remotes:
   - name: h1
     host: 192.168.0.33
     user: root
-    pwd: cc521400.
+    pwd: *****

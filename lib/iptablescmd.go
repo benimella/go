@@ -93,6 +93,14 @@ func init() {
 	// sudo iptables -t filter -A INPUT -p tcp --dport 9092 -j DROP
 	// sudo iptables -t filter -A INPUT -p tcp --dport 9093 -j DROP
 	// sudo iptables -t filter -A INPUT -p tcp --dport 9094 -j DROP
+	// sudo iptables -t filter -D INPUT -p tcp --dport 9094 -j DROP
+	// sudo iptables -t filter -D INPUT 1
+	// sudo iptables -t nat -A PREROUTING -p tcp -d 192.168.0.33 --dport 80 -j DNAT --to-destination 192.168.0.33:9090
+	// sudo iptables -t nat -D PREROUTING 2
+	// sudo iptables -A PREROUTING -t nat -p tcp -d 192.168.0.33 --dport 80 -m statistic --mode random --probability 0.5  -j DNAT --to-destination 192.168.0.33:9090
+	// sudo iptables -A PREROUTING -t nat -p tcp -d 192.168.0.33 --dport 80 -m statistic --mode random --probability 1  -j DNAT --to-destination 192.168.0.33:9091
+	// sudo iptables -t nat -D PREROUTING 2
+	// sudo yum -y install libcap libcap-devel
 }
 
 var iptablesCMD = &cobra.Command{

@@ -6,6 +6,7 @@ require (
 	github.com/gin-gonic/gin v1.7.7 // indirect
 	github.com/go-ping/ping v0.0.0-20211130115550-779d1e919534 // indirect
 	github.com/go-playground/validator/v10 v10.10.0 // indirect
+	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/shirou/gopsutil/v3 v3.21.12 // indirect

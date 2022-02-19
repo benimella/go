@@ -8,7 +8,7 @@ import (
 func main() {
 	r := gin.New()
 	r.GET("/", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"message": "web1"})
+		c.JSON(http.StatusOK, gin.H{"message": "web2"})
 	})
-	r.Run(":9090")
+	r.Run(":9091")
 }
